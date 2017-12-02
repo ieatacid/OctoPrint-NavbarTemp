@@ -34,7 +34,7 @@ $(function() {
     ]);
 });
 
-function formatBarTemperature(toolName, actual, target) {
+window.formatBarTemperature = function(toolName, actual, target) {
     var output = toolName + ": " + _.sprintf("%.1f&deg;C", actual);
 
     if (target) {
